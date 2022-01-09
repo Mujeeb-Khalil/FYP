@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "{{url_for('static',filename = 'css/HeartDiseasePredictionform.css')}}">
+    <link rel="stylesheet" href="/static/css/HeartDiseasePredictionform.css">
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+    <form action="/heart_disease/predict_form/predict" method = "POST">
+        <label>Age</label>
+        <input type ="text" name = "Age" >
+
+        <label>Gender:</label>
+            <select name="Gender">
+                <option>Female</option>
+                <option>Male</option>
+            </select>
+
+        <label>Chest Pain type</label>
+            <select name="Chest_Pain_Type">
+                <option>Typical Angina</option>
+                <option>Atypical Angina</option>
+                <option>Non Anginal</option>
+                <option>Asymptomatic</option>
+            </select>
+
+        <label>Resting Bp in mm/HG</lable>
+        <input type ="text" name = "Resting_bp" >
+
+        <label>cholesterol in mg/dl</label>
+        <input type ="text" name = "cholesterol" >
+        
+        <label>fasting blood sugar:</label>
+        <select name="Fasting_blood_sugar">
+            <option>&lt120 mg/dl</option>
+            <option>&gt120 mg/dl</option>
+        </select>
+
+        <label> resting ecg:</label>
+            <select name="Resting_ecg">
+                <option>Normal</option>
+                <option>ST-T Wave Abnormality</option>
+                <option>Left Ventricular Hypertrophy</option>
+            </select>
+
+        <label> max heart rate</label>
+        <input type ="text" name = "heart_rate" >
+
+        <label>exercise angina</label>
+        <select name="exercise_angina">
+            <option>Depicting</option>
+            <option>No Depicting</option>
+        </select>
+
+        <label>oldpeak</label>
+        <input type ="text" name = "oldpeak" >
+
+        <label> ST slope</label>
+        <select name="ST_slope">
+                <option>Normal</option>
+                <option>Up sloping</option>
+                <option>Flat</option>
+                <option>Down Sloping</option>
+            </select>
+
+        <button type="submit">Predict</button>
+
+            
+    </form>
+
+</body>
+</html>
