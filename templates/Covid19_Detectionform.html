@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="{{url_for('static',filename = 'css/HeartDiseasePredictionform.css')}}">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename = 'css/HeartDiseasePredictionform.css')}}"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <form action="/Covid19/predict_form/predict" method="post"  enctype="multipart/form-data" >
-        <label>Upload an Image:</label>
-        <input type="file" name="image" accept="image/*" style="display: block;">
-        
-        <label>Gender:</label>
-            <select name="Gender">
-                <option>Female</option>
-                <option>Male</option>
-            </select>
+  </head>
+  <body>
+    <form
+      action="/Covid19/predict_form/predict"
+      method="post"
+      enctype="multipart/form-data"
+      id="predictionForm"
+      onsubmit="return checkforImage()"
+    >
+      <label>Upload an Image:</label>
+      <input
+        type="file"
+        name="image"
+        id="uploadImageInput"
+        accept="image/*"
+        style="display: block"
+        onchange="readImageSource(this)"
+      />
 
-        <label>Age Above 60:</label>
-            <select name="Age_Above_60">
-                <option>Yes</option>
-                <option>No</option>
-            </select>
+      <label>Gender:</label>
+      <select name="Gender">
+        <option>Female</option>
+        <option>Male</option>
+      </select>
 
-        <label>Cough:</label>
-            <select name="Cough">
-                <option>Yes</option>
-                <option>No</option>
-            </select>
+      <label>Age Above 60:</label>
+      <select name="Age_Above_60">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
 
-        <label>Shortness of Breadth:</label>
-            <select name="Shortness_of_breadth">
-                <option>Yes</option>
-                <option>No</option>
-            </select>
+      <label>Cough:</label>
+      <select name="Cough">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
 
-        <label>Fever:</label>
-            <select name="Fever">
-                <option>Yes</option>
-                <option>No</option>
-            </select>
+      <label>Shortness of Breadth:</label>
+      <select name="Shortness_of_breadth">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
 
-        <label>Sore Throat:</label>
-            <select name="Sore_throat">
-                <option>Yes</option>
-                <option>No</option>
-            </select>
-        
-        <label>Headache:</label>
-            <select name="Headache">
-                <option>Yes</option>
-                <option>No</option>
-            </select>
-        <label>Test Indication:</label>
-            <select name="Test_Indication">
-                <option>Contact with Confirmed</option>
-                <option>Abroad</option>
-                <option>Other</option>
-            </select>
-        
-        <button type="submit">Predict</button>
+      <label>Fever:</label>
+      <select name="Fever">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
 
+      <label>Sore Throat:</label>
+      <select name="Sore_throat">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label>Headache:</label>
+      <select name="Headache">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <label>Test Indication:</label>
+      <select name="Test_Indication">
+        <option>Contact with Confirmed</option>
+        <option>Abroad</option>
+        <option>Other</option>
+      </select>
+
+      <button type="submit">Predict</button>
     </form>
-</body>
+
+    <img src="" alt="Preview" width="200" id="previewImage" />
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='JS/covidPredictionPage.js') }}"
+    ></script>
+  </body>
 </html>
