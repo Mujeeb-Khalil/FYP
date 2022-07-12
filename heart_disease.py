@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 
-filename = "Models/heart_disease_rf_model.pkl"
+filename = "Models/rf_with_96.82% test.pkl"
 with open(filename, 'rb') as file:
     model = pickle.load(file)
 
