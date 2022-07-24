@@ -1,7 +1,4 @@
-from flask import Flask, render_template, request, url_for 
-import pickle
-import numpy as np
-import pandas as pd
+from flask import Flask, render_template 
 from heart_disease import heart_disease_api
 from Covid19 import Covid19_api
 
