@@ -1,12 +1,9 @@
-from flask import Flask,render_template,request,url_for
-import pickle
+from flask import request
 import numpy as np
-import pandas as pd
-import cv2
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
-model_path = "./Models/COVID-19_96.13%.h5"
+model_path = "./Models/COVID_with 97%.h5"
 model = load_model(model_path)
 
 
