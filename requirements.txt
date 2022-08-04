@@ -2,3 +2,4 @@ Flask
 numpy==1.21.5
 tensorflow-cpu
 gunicorn
+scikit-learn
