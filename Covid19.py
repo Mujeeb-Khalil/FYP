@@ -11,6 +11,7 @@ model = load_model(model_path)
 def Covid19_api():
     if request.method == "POST":
         gen = request.form.get("Gender")
+        
         if gen == "Female":
             gender = 0
         else:

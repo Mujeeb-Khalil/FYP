@@ -1,8 +1,6 @@
-from flask import Flask,render_template,request,url_for
+from flask import request
 import pickle
-import sklearn
 import numpy as np
-import pandas as pd
 
 
 filename = "./Models/rf_with_96.82% test .pkl"
