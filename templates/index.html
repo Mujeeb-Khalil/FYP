@@ -117,13 +117,13 @@
           <div class="modal-body">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-6 p-5">
+                <div class="col-12 col-md-6 py-5 text-center">
                   
                   <img src="{{url_for('static',filename = 'icons/favatar.png')}}" alt="favatar" width="100%" />
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <h1 class="text-primary fw-bold mb-0">Shabana Mahar</h1>
-                  <p class="text-danger">Group Leader</p>
+                  <p class="text-danger">Group Member</p>
 
                   <p class="text-secondary"><span class="text-dark fw-bold">Contribution: </span> Something Something</p>
 
@@ -164,10 +164,10 @@
           <div class="modal-body">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-6 p-5">
+                <div class="col-12 col-md-6 py-5 text-center">
                   <img src="{{url_for('static',filename = 'icons/mavatar.png')}}" alt="mavatar" width="100%" />
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <h1 class="text-primary fw-bold mb-0">Karan Kumar</h1>
                   <p class="text-danger">Assistant Group Leader</p>
 
@@ -210,12 +210,12 @@
           <div class="modal-body">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-6 p-5">
+                <div class="col-12 col-md-6 py-5 text-center">
                   <img src="{{url_for('static',filename = 'icons/favatar.png')}}" alt="favatar" width="100%" />
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <h1 class="text-primary fw-bold mb-0">Amna Memon</h1>
-                  <p class="text-danger">Assistant Group Leader</p>
+                  <p class="text-danger">Group Member</p>
 
                   <p class="text-secondary"><span class="text-dark fw-bold">Contribution: </span> Something Something</p>
 
@@ -256,10 +256,10 @@
           <div class="modal-body">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-6 p-5">
+                <div class="col-12 col-md-6 py-5 text-center">
                   <img src="{{url_for('static',filename = 'icons/mavatar.png')}}" alt="mavatar" width="100%" />
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <h1 class="text-primary fw-bold mb-0">Mujeeb Ur Rehman</h1>
                   <p class="text-danger">Group Leader</p>
 
@@ -302,10 +302,10 @@
           <div class="modal-body">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-6 p-5">
+                <div class="col-12 col-md-6 py-5 text-center">
                   <img src="{{url_for('static',filename = 'icons/mavatar.png')}}" alt="mavatar" width="100%" />
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <h1 class="text-primary fw-bold mb-0">Farhad Ali</h1>
                   <p class="text-danger">Group Member</p>
 
@@ -329,12 +329,6 @@
       </div>
     </div>
     <!-- 
-
-
-
-
-
-
      -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -402,14 +396,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide hero-swiper-slide">
           <div
-
-
-
-
-
-
-
-            class="background h-100 text-center text-white"            
+            class="background h-100 text-center text-white"
             style="background-image: url(./static/images/Covid.jpeg); background-repeat: no-repeat; background-size: cover; background-position: center"
           >
             <div class="swiper-slide-content position-absolute w-100" data-aos="zoom-in-down" style="bottom: 50px">
@@ -424,12 +411,6 @@
         </div>
         <div class="swiper-slide hero-swiper-slide">
           <div
-
-
-
-
-
-
             class="background h-100 text-center text-white"
             style="background-image: url(./static/images/heart.jpeg); background-repeat: no-repeat; background-size: cover; background-position: center"
           >
@@ -515,7 +496,6 @@
           <h1 class="mb-4 fw-bold text-center">about us</h1>
         </div>
         <div class="d-none d-sm-block col-6">
-          "{{url_for('static',filename = 'images/about-us.svg')}}"
           <img src="{{url_for('static',filename = 'images/about-us.svg')}}" alt="" width="230px" />
         </div>
         <div class="col-12 col-sm-6">
@@ -545,7 +525,6 @@
             <div class="card-body text-center">
               <div class="card-img">
                 <img
-                
                   src="{{url_for('static',filename = 'icons/brain_tumor_icon.jpg')}}"
                   alt=""
                   class="position-absolute mx-auto start-0 end-0 rounded-4"
@@ -706,71 +685,71 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="profile-card">
-                    <a href="#" class="text-decoration-none">
-                      <div class="profile-picture-holder">
-                        <img src="{{url_for('static',filename = 'icons/favatar.png')}}" alt="" class="m-auto" width="200px" height="200px" />
-                      </div>
-                      <div class="profile-info">
-                        <h3 class="text-center">Amna</h3>
-                        <p class="text-center mb-0">GL</p>
-                      </div>
-                    </a>
+                    <div class="profile-picture-holder">
+                      <img src="{{url_for('static',filename = 'icons/favatar.png')}}" alt="" class="m-auto" width="200px" height="200px" />
+                    </div>
+                    <div class="profile-info">
+                      <h3 class="text-center fw-normal mb-2">
+                        <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#amnaProfileModal">Amna</a>
+                      </h3>
+                      <p class="text-center mb-0">Member</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="profile-card">
-                    <a href="#" class="text-decoration-none">
-                      <div class="profile-picture-holder">
-                        <img src="{{url_for('static',filename = 'icons/favatar.png')}}" alt="" class="m-auto" width="200px" height="200px" />
-                      </div>
-                      <div class="profile-info">
-                        <h3 class="text-center">Shabana</h3>
-                        <p class="text-center mb-0">Member</p>
-                      </div>
-                    </a>
+                    <div class="profile-picture-holder">
+                      <img src="{{url_for('static',filename = 'icons/favatar.png')}}" alt="" class="m-auto" width="200px" height="200px" />
+                    </div>
+                    <div class="profile-info">
+                      <h3 class="text-center fw-normal mb-2">
+                        <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#shabanaProfileModal">Shabana</a>
+                      </h3>
+                      <p class="text-center mb-0">Member</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="profile-card">
-                    <a href="#" class="text-decoration-none">
-                      <div class="profile-picture-holder">
-                        <img src="{{url_for('static',filename = 'icons/mavatar.png')}}" alt="" class="m-auto" width="200px" height="200px" />
-                      </div>
-                      <div class="profile-info">
-                        <h3 class="text-center mb-0">Karan</h3>
-                        <p class="text-center mb-0">Member</p>
-                      </div>
-                    </a>
+                    <div class="profile-picture-holder">
+                      <img src="{{url_for('static',filename = 'icons/mavatar.png')}}" alt="" class="m-auto" width="200px" height="200px" />
+                    </div>
+                    <div class="profile-info">
+                      <h3 class="text-center fw-normal mb-2">
+                        <a href="#" class="link-warning" data-bs-toggle="modal" data-bs-target="#karanProfileModal">Karan</a>
+                      </h3>
+                      <p class="text-center mb-0">AGL</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="profile-card">
-                    <a href="#" class="text-decoration-none">
-                      <div class="profile-picture-holder">
-                        <img src="{{url_for('static',filename = 'icons/mavatar.png')}}" alt="" class="m-auto" width="200px" height="200px" />
-                      </div>
-                      <div class="profile-info">
-                        <h3 class="text-center">Farhad</h3>
-                        <p class="text-center mb-0">AGL</p>
-                      </div>
-                    </a>
+                    <div class="profile-picture-holder">
+                      <img src="{{url_for('static',filename = 'icons/mavatar.png')}}" alt="" class="m-auto" width="200px" height="200px" />
+                    </div>
+                    <div class="profile-info">
+                      <h3 class="text-center fw-normal mb-2">
+                        <a href="#" class="link-warning" data-bs-toggle="modal" data-bs-target="#farhadProfileModal">Farhad</a>
+                      </h3>
+                      <p class="text-center mb-0">Member</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="profile-card">
-                    <a href="#" class="text-decoration-none">
-                      <div class="profile-picture-holder">
-                        <img src="{{url_for('static',filename = 'icons/mavatar.png')}}" alt="" class="m-auto" width="200px" height="200px" />
-                      </div>
-                      <div class="profile-info">
-                        <h3 class="text-center">Mujeeb</h3>
-                        <p class="text-center mb-0">Member</p>
-                      </div>
-                    </a>
+                    <div class="profile-picture-holder">
+                      <img src="{{url_for('static',filename = 'icons/mavatar.png')}}" alt="" class="m-auto" width="200px" height="200px" />
+                    </div>
+                    <div class="profile-info">
+                      <h3 class="text-center fw-normal mb-2">
+                        <a href="#" class="link-warning" data-bs-toggle="modal" data-bs-target="#mujeebProfileModal">Mujeeb</a>
+                      </h3>
+                      <p class="text-center mb-0">GL</p>
+                    </div>
                   </div>
                 </div>
               </div>
