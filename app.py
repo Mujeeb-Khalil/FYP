@@ -28,7 +28,5 @@ def Covid19_predict():
     return render_template("Covid19result.html", pred = Covid19_api())
 
 
-
-
 if __name__ == "__main__":
     app.run(debug = True)
