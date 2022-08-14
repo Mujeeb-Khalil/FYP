@@ -37,3 +37,32 @@ First 5 rows of the dataset
 | 48 | Female | Asymptomatic | 138 | 214 | <120 mg/dl | Normal | 108 | 1 | 1.5 | Flat | Yes |
 | 54 | Male | Non-Anginal Pain | 150 | 195 | <120 mg/dl | Normal | 122 | 0 | 0.0 | Up sloping | No |
 ### 1.2 COVID-19
+
+## 2. Model Training & Testing
+### 2.1 Heart Disease Prediction
+We have used different machine learning and deep learning algorithms such as Random Forest Classifier, Extreme Gradient Boosting, Logistic Regression, Artificial Neural Network and Convolutional Neural Network.
+
+### 2.2 COVID-19 Prediction
+
+For COVID-19 Prediction, we have used Multi-Input Modal that takes the X-ray image and COVID-19 Symptoms as input and return the prediction. We have used Convolutional Neural Network and ResNet50 for COVID-19 Prediction.
+
+## 3. Deployment
+We have used HTML, CSS, Javascript, and bootstrap to design and develop the frontend of the webpage. Python's framework flask is used to develop the backend of the webapp. We have deployed the website on Heroku.
+
+
+
+
+
+## Languages and Frameworks
+- HTML
+- CSS
+- Javascript
+- Bootstrap
+- Python
+- Numpy
+- Pandas
+- Tensorflow
+- Keras
+- Flask
+- Scikit-Learn
+- Pillow
