@@ -76,3 +76,11 @@ We have used HTML, CSS, Javascript, and bootstrap to design and develop the fron
 - Flask
 - Scikit-Learn
 - Pillow
+
+
+## Our Team
+- Mujeeb Ur Rehman
+- Karan Kumar Khatri
+- Farhad Ali
+- Shabana Mahar
+- Amna Chandio
