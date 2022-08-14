@@ -64,18 +64,19 @@ We have used HTML, CSS, Javascript, and bootstrap to design and develop the fron
 
 
 ## Languages and Frameworks
-- HTML
-- CSS
-- Javascript
-- Bootstrap
-- Python
-- Numpy
-- Pandas
-- Tensorflow
-- Keras
-- Flask
-- Scikit-Learn
-- Pillow
+- <img src="https://img.shields.io/badge/-HTML-orange">
+- <img src="https://img.shields.io/badge/-CSS-blue">
+- <img src="https://img.shields.io/badge/-JavaScript-yellow">
+- <img src="https://img.shields.io/badge/-bootstrap-blue">
+- <img src="https://img.shields.io/badge/-Python-white">
+- <img src="https://img.shields.io/badge/-Numpy-skyblue">
+- <img src="https://img.shields.io/badge/-Pandas-blue">
+- <img src="https://img.shields.io/badge/-Tensorflow-orange">
+- <img src="https://img.shields.io/badge/-Keras-red">
+- <img src="https://img.shields.io/badge/-Flask-black">
+- <img src="https://img.shields.io/badge/-Scikit Learn-orange">
+- <img src="https://img.shields.io/badge/-Pillow-white">
+
 
 
 ## Our Team
