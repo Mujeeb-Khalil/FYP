@@ -90,5 +90,4 @@ def image_load():
     img = np.array(img)
     img = img/255.0
     img = np.expand_dims(img,axis =0)
-    os.remove(image_path)
     return img
