@@ -2,5 +2,5 @@ Flask
 numpy==1.21.5
 tensorflow-cpu
 gunicorn
-scikit-learn
+scikit-learn==1.0.1
 pillow
