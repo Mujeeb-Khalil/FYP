@@ -1,5 +1,6 @@
 from flask import request
 import numpy as np
+import os
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
@@ -81,6 +82,7 @@ def Covid19_api():
 
 
 def image_load():
+    
     image_file = request.files["image"]
     image_path = "./images/"+image_file.filename
     image_file.save(image_path)
@@ -88,4 +90,5 @@ def image_load():
     img = np.array(img)
     img = img/255.0
     img = np.expand_dims(img,axis =0)
+    os.remove(image_path)
     return img
