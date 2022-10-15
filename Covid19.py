@@ -68,11 +68,12 @@ def Covid19_api():
             abroad = 0
             other = 1
 
-        img_array = image_load()
+        img_array,image_path = image_load()
         features = [cough,fever,sore_throat,shortness_of_breath,headache,age_above_60,gender,abroad,contact_confirmed,other]         
         features = np.asarray(features,dtype = int)
         features = features.reshape(1,10)
         prediction = model.predict([img_array,features])
+        os.remove(image_path)
         if prediction[0][0] >0.5:
             return "Unfortunately you are Covid Positive"
         else:
@@ -90,4 +91,4 @@ def image_load():
     img = np.array(img)
     img = img/255.0
     img = np.expand_dims(img,axis =0)
-    return img
+    return img,image_path
