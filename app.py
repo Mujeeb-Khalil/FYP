@@ -20,12 +20,14 @@ def covid_19():
 
 @app.route("/HeartDisease/Result", methods = ["GET","POST"])
 def heart_disease_predict():
-    return render_template("heart_disease_result.html", pred = heart_disease_api() )
+    percent,pred = heart_disease_api()
+    return render_template("heart_disease_result.html",percentage = percent, prediction = pred)
 
 
 @app.route("/COVID-19/Result", methods = ["GET","POST"])
 def Covid19_predict():
-    return render_template("Covid19result.html", pred = Covid19_api())
+    percent,pred = Covid19_api()
+    return render_template("Covid19result.html", percentage = percent,prediction = pred)
 
 
 if __name__ == "__main__":

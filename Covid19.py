@@ -74,10 +74,15 @@ def Covid19_api():
         features = features.reshape(1,10)
         prediction = model.predict([img_array,features])
         os.remove(image_path)
+        print(prediction)
         if prediction[0][0] >0.5:
-            return "You are Covid Positive"
+            pred =  "You are Covid Positive"
         else:
-            return "You are Covid Negative"
+            pred =  "You are Covid Negative"
+        
+        percent = str(np.round(prediction[0][0]* 100,2)) + "%"     
+
+        return percent, pred
         
 
 

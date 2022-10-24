@@ -90,10 +90,13 @@ def heart_disease_api():
             left_ecg =1
         features = [age,gender,resting_bp,cholesterol,Fasting_blood_sugar,max_heart_rate,exercise_angina,oldpeak,asympt,atyp_ang,non_ang,typ_ang,down_slope,flat_slope,normal_slope,up_slope,stt_ecg,left_ecg,normal_ecg]
         features =  np.asarray(features,dtype=float)
-        prediction = model.predict([features])
-        if prediction[0] == 0:
+        prediction = np.array(model.predict_proba([features])).flatten()
+        if np.argmax(prediction) == 0:
             pred = "You don't have heart disease"
+            percent = 100 - prediction[np.argmax(prediction)]*100
         else:
             pred = "You have heart disease"
-        return pred
+            percent = prediction[np.argmax(prediction)]*100
+        percent = str(percent) + "%"
+        return percent,pred
         
