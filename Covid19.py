@@ -75,9 +75,9 @@ def Covid19_api():
         prediction = model.predict([img_array,features])
         os.remove(image_path)
         if prediction[0][0] >0.5:
-            return "Unfortunately you are Covid Positive"
+            return "You are Covid Positive"
         else:
-            return "Congratulations you are Covid Negative"
+            return "You are Covid Negative"
         
 
 

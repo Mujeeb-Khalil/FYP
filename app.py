@@ -20,7 +20,7 @@ def covid_19():
 
 @app.route("/HeartDisease/Result", methods = ["GET","POST"])
 def heart_disease_predict():
-    return render_template("heart_disease_result.html", prediction = heart_disease_api())
+    return render_template("heart_disease_result.html", pred = heart_disease_api() )
 
 
 @app.route("/COVID-19/Result", methods = ["GET","POST"])

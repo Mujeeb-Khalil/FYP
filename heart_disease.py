@@ -92,8 +92,8 @@ def heart_disease_api():
         features =  np.asarray(features,dtype=float)
         prediction = model.predict([features])
         if prediction[0] == 0:
-            pred = "Congratulation you are safe from heart disease"
+            pred = "You don't have heart disease"
         else:
-            pred = "Unfortunately you have a heart disease"
+            pred = "You have heart disease"
         return pred
         
