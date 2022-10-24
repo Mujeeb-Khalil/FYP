@@ -97,6 +97,6 @@ def heart_disease_api():
         else:
             pred = "You have heart disease"
             percent = prediction[np.argmax(prediction)]*100
-        percent = str(percent) + "%"
+        percent = str(percent)
         return percent,pred
         

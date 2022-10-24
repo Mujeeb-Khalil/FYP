@@ -25,8 +25,8 @@
                 <div class="col-12">
                   <h2 class="border-bottom border-primary border-opacity-50 px-3 py-2">Heart Disease Prediction Result</h2>
                   <div class="article-body px-3 py-2">
-                    <p class="mb-5">Percent: <span class="text-danger fw-bold">{{percentage}}</span></p>
-                    <p class="mb-5">Prediction: <span class="text-danger fw-bold">{{prediction}}</span></p>
+                    <p class="">Percent: <span id="perct-result-text" class="fw-bold">{{percentage}} %</span></p>
+                    <p class="mb-5">Prediction: <span id="prediction-result-text" class="fw-bold">{{prediction}}!</span></p>
 
                     <p>
                       Visit
@@ -35,7 +35,7 @@
                       >
                         this link</a
                       >
-                      to CDC official website for Precautions
+                      to CDC official website for precautionary measures!
                     </p>
                   </div>
                   <div class="article-footer border-top border-primary border-opacity-50 text-end px-3 py-2">
@@ -50,4 +50,18 @@
       </div>
     </main>
   </body>
+
+  <script>
+    const perct = document.getElementById('perct-result-text');
+    const prediction = document.getElementById('prediction-result-text');
+
+    console.log('{{percentage}}');
+    if (Number('{{percentage}}') >= 50) {
+      perct.style.color = '#dc3545';
+      prediction.style.color = '#dc3545';
+    } else {
+      perct.style.color = '#198754';
+      prediction.style.color = '#198754';
+    }
+  </script>
 </html>
