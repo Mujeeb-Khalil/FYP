@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Covid Detection Form</title>
+    <title>Covid Prediction Form</title>
 
     <!-- CSS only -->
     <link
@@ -13,17 +13,41 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+
+    <style>
+      select {
+        margin: 0.375rem 0 !important;
+      }
+
+      input,
+      select {
+        background-color: rgba(0, 0, 255, 0.05) !important;
+      }
+
+      label {
+        color: rgba(0, 0, 255, 1);
+        font-weight: bold;
+      }
+
+      input::placeholder {
+        color: rgba(0, 0, 0, 0.01);
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4">
+        <div class="d-none d-md-block col-4">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <img src="{{url_for('static',filename = 'images/coronavirus.png')}}" alt="heart" class="w-100" />
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
           <h3 class="text-center">Covid 19 Detection Form</h3>
           <form action="/COVID-19/Result" method="post" enctype="multipart/form-data">
             <div class="mb-3">
               <label for="" class="form-label">Upload an Image:</label>
-              <input type="file" name="image" id="" accept="image/*" required/>
+              <input type="file" name="image" id="" accept="image/*" required />
             </div>
 
             <div class="mb-3">
@@ -38,8 +62,7 @@
               <label for="" class="form-label">Age Above 60:</label>
               <select name="Age_Above_60" class="form-select" aria-label="Default select example">
                 <option selected>No</option>
-                <option >Yes</option>
-
+                <option>Yes</option>
               </select>
             </div>
 
@@ -48,7 +71,6 @@
               <select name="Cough" class="form-select" aria-label="Default select example">
                 <option selected>No</option>
                 <option>Yes</option>
-
               </select>
             </div>
 
@@ -57,7 +79,6 @@
               <select name="Shortness_of_breath" class="form-select" aria-label="Default select example">
                 <option selected>No</option>
                 <option>Yes</option>
-
               </select>
             </div>
 
@@ -66,7 +87,6 @@
               <select name="Fever" class="form-select" aria-label="Default select example">
                 <option selected>No</option>
                 <option>Yes</option>
-
               </select>
             </div>
 
@@ -75,7 +95,6 @@
               <select name="Sore_throat" class="form-select" aria-label="Default select example">
                 <option selected>No</option>
                 <option>Yes</option>
-
               </select>
             </div>
 
@@ -84,7 +103,6 @@
               <select name="Headache" class="form-select" aria-label="Default select example">
                 <option selected>No</option>
                 <option>Yes</option>
-
               </select>
             </div>
 

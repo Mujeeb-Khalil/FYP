@@ -49,19 +49,19 @@
         </div>
       </div>
     </main>
+
+    <script>
+      const perct = document.getElementById('perct-result-text');
+      const prediction = document.getElementById('prediction-result-text');
+
+      console.log('{{percentage}}');
+      if (Number('{{percentage}}') >= 50) {
+        perct.style.color = '#dc3545';
+        prediction.style.color = '#dc3545';
+      } else {
+        perct.style.color = '#198754';
+        prediction.style.color = '#198754';
+      }
+    </script>
   </body>
-
-  <script>
-    const perct = document.getElementById('perct-result-text');
-    const prediction = document.getElementById('prediction-result-text');
-
-    console.log('{{percentage}}');
-    if (Number('{{percentage}}') >= 50) {
-      perct.style.color = '#dc3545';
-      prediction.style.color = '#dc3545';
-    } else {
-      perct.style.color = '#198754';
-      prediction.style.color = '#198754';
-    }
-  </script>
 </html>

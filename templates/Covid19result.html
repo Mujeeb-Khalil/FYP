@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body class="bg-secondary bg-opacity-25">
     <main class="container min-vh-100">
       <div class="row">
@@ -48,7 +49,6 @@
       const perct = document.getElementById('perct-result-text');
       const prediction = document.getElementById('prediction-result-text');
 
-      console.log('{{percentage}}');
       if (Number('{{percentage}}') >= 50) {
         perct.style.color = '#dc3545';
         prediction.style.color = '#dc3545';
